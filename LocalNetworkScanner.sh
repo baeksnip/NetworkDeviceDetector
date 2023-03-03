@@ -1,8 +1,13 @@
 #!/bin/bash
 
+function ctrl_c(){
+ exit 1
+}
+trap ctrl_c INT
+
 # Config parametros #
 rango="192.168.100"
-ruta_ficheros="./scan/"
+ruta_ficheros="./"
 # Config parametros #
 
 #Escaneo de IPs
@@ -19,3 +24,4 @@ for fichero_ip in `ls $ruta_ficheros`; do
                 done; wait
         fi
 done
+

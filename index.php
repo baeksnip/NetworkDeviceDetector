@@ -8,7 +8,7 @@ foreach($fileList as $filename){
                 while ($line = fgets($lines)) {
                         echo($line);
                 }
-        fclose($fh);
+        fclose($lines);
         echo '<br>';
     }
 }

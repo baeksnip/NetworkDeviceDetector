@@ -1,17 +1,17 @@
 # LocalNetworkScanner
 
-La finalidad es tener el script de bash ejecutandose de forma periodica para tener identificados los dispositivos dentro de una red, así como sus puertos abiertos, representando la información en una tabla web.
+The purpose is to have the bash script running periodically to identify the devices within a network, as well as their open ports, representing the information in a web table.
 
-#LocalNetworkScanner.sh (script que realiza las funciones de busqueda)
+#LocalNetworkScanner.sh (script that performs the search functions)
 
-#networkScanner.php (Script php que genera una tabla a partir de los datos recabados por el script bash)
+#networkScanner.php (php script that generates a table from the data collected by the bash script)
 
-#Carpetas utilizadas:
+#Used folders:
 
-./arp/("FICHEROS_IPS_CON_DIRECCIONES_MAC")
+./arp/("IPS_FILES_WITH_MAC_ADDRESSES")
 
-./ips/("FICHEROS_IPS_CON_PUERTOS_ABIERTOS")
+./ips/("IPS_FILES_WITH_OPEN_PORTS")
 
-./nombres/("FICHEROS_IPS_CON_NOMBRES_DESCRIPTIVOS")
+./names/("IPS_FILES_WITH_FRIENDLY_NAMES")
 
-#Como tarea adicional, se podría configurar una alerta a enviar por correo cada vez que se encuentre un nuevo dispositivo
+# As an additional task, you could configure an alert to be sent by mail every time a new device is found

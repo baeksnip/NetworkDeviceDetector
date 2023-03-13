@@ -7,3 +7,10 @@ Escanea los puertos de equipos que encuentra dentro del rango de ips
 
 index.php
 Una web en php explora la carpeta donde se almacenan los ficheros y listandolos con el contenido de cada fichero
+
+Rutas:
+/usr/bin/netscan/
+/var/www/html/netscan/
+/var/www/html/netscan/arp/
+/var/www/html/netscan/ips/
+/var/www/html/netscan/nombres/

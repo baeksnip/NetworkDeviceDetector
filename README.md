@@ -10,7 +10,7 @@ Una web en php explora la carpeta donde se almacenan los ficheros y listandolos 
 
 Rutas:
 /usr/bin/netscan/
-/var/www/html/netscan/
-/var/www/html/netscan/arp/
-/var/www/html/netscan/ips/
-/var/www/html/netscan/nombres/
+/var/www/html/netscan/LocalNetworkScanner.php
+/var/www/html/netscan/arp/("FICHEROS_IPS_CON_DIRECCIONES_MAC")
+/var/www/html/netscan/ips/("FICHEROS_IPS_CON_PUERTOS_ABIERTOS")
+/var/www/html/netscan/nombres/("FICHEROS_IPS_CON_NOMBRES_DESCRIPTIVOS")

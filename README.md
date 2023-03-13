@@ -1,6 +1,6 @@
 # LocalNetworkScanner
 
-La finalidad es tener el script de bash ejecutandose de forma periodica para detectar nuevos dispositivos dentro de una red, ya que este realiza un escaneo de 254 IPS dentro de un rango definido, mostrando (MAC,IP y PUERTOS ABIERTOS) en una tabla web.
+La finalidad es tener el script de bash ejecutandose de forma periodica para tener identificados los dispositivos dentro de una red, así como sus puertos abiertos, representando la información en una tabla web.
 
 #LocalNetworkScanner.sh (script que realiza las funciones de busqueda)
 
@@ -13,3 +13,5 @@ La finalidad es tener el script de bash ejecutandose de forma periodica para det
 ./ips/("FICHEROS_IPS_CON_PUERTOS_ABIERTOS")
 
 ./nombres/("FICHEROS_IPS_CON_NOMBRES_DESCRIPTIVOS")
+
+#Como tarea adicional, se podría configurar una alerta a enviar por correo cada vez que se encuentre un nuevo dispositivo

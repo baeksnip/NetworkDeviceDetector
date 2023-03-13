@@ -1,21 +1,15 @@
 # LocalNetworkScanner
 
-Se programa una tarea para que ejecute el fichero LocalNetworkScanner.sh con la periodicidad deseada 
+La finalidad es tener el script de bash ejecutandose de forma periodica para detectar nuevos dispositivos dentro de una red, ya que este realiza un escaneo de 254 IPS dentro de un rango definido, mostrando (MAC,IP y PUERTOS ABIERTOS) en una tabla web.
 
-LocalNetworkScanner.sh
-Escanea los puertos de equipos que encuentra dentro del rango de ips
+#LocalNetworkScanner.sh (script que realiza las funciones de busqueda)
 
-index.php
-Una web en php explora la carpeta donde se almacenan los ficheros y listandolos con el contenido de cada fichero
+#networkScanner.php (Script php que genera una tabla a partir de los datos recabados por el script bash)
 
-Rutas:
+#Carpetas utilizadas:
 
-/usr/bin/netscan/LocalNetworkScanner.sh
+./arp/("FICHEROS_IPS_CON_DIRECCIONES_MAC")
 
-/var/www/html/netscan/LocalNetworkScanner.php
+./ips/("FICHEROS_IPS_CON_PUERTOS_ABIERTOS")
 
-/var/www/html/netscan/arp/("FICHEROS_IPS_CON_DIRECCIONES_MAC")
-
-/var/www/html/netscan/ips/("FICHEROS_IPS_CON_PUERTOS_ABIERTOS")
-
-/var/www/html/netscan/nombres/("FICHEROS_IPS_CON_NOMBRES_DESCRIPTIVOS")
+./nombres/("FICHEROS_IPS_CON_NOMBRES_DESCRIPTIVOS")

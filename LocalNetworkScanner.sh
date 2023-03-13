@@ -1,10 +1,5 @@
 #!/bin/bash
 
-function ctrl_c(){
- exit 1
-}
-trap ctrl_c INT
-
 # Config parametros #
 rango="192.168.100"
 ruta_ficheros="/var/www/html/netscan/ips/"

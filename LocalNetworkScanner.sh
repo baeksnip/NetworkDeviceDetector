@@ -2,8 +2,8 @@
 
 # Config parametros #
 rango="192.168.100"
-ruta_ficheros="/var/www/html/netscan/ips/"
-ruta_ficheros_arp="/var/www/html/netscan/arp/"
+ruta_ficheros="./ips/"
+ruta_ficheros_arp="./arp/"
 # Config parametros #
 
 #Escaneo de IPs

@@ -13,5 +13,3 @@ The purpose is to have the bash script running periodically to identify the devi
 ./ips/("IPS_FILES_WITH_OPEN_PORTS")
 
 ./names/("IPS_FILES_WITH_FRIENDLY_NAMES")
-
-# As an additional task, you could configure an alert to be sent by mail every time a new device is found

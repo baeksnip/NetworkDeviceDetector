@@ -2,13 +2,15 @@
 
 # Config parametros #
 rango="192.168.100"
-ruta_ficheros="./ips/"
-ruta_ficheros_arp="./arp/"
+ruta_ficheros="/var/www/html/netscan/ips/"
+ruta_ficheros_arp="/var/www/html/netscan/arp/"
+ruta_ficheros_last="/var/www/html/netscan/last/"
+fecha=`date +"%d/%m/%Y %H:%M"`
 # Config parametros #
 
 #Escaneo de IPs
 for ip in $(seq 1 254); do
-        timeout 1 bash -c "ping -c 1 $rango.$ip" &>/dev/null && touch $ruta_ficheros$rango"."$ip &
+        timeout 1 bash -c "ping -c 1 $rango.$ip" &>/dev/null && touch $ruta_ficheros$rango"."$ip && echo -n $fecha > $ruta_ficheros_last$rango"."$ip &
 done; wait
 
 #Consulta MAC si el fichero de la MAC esta vacio

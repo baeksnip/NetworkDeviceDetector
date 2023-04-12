@@ -1,6 +1,6 @@
 <?php
-
 function check($ip,$puerto){
+    if($puerto <> "0"){
         if(fsockopen($ip,$puerto,$timeout = 1))
         {
                 print "<font color=green>@</font>";
@@ -9,6 +9,7 @@ function check($ip,$puerto){
         {
                 print "<font color=red>@</font>";
         }
+    }
 }
 
 $fileList = glob('./ips/192.168.*');
@@ -17,6 +18,7 @@ natsort($fileList);
 print ("<table border=1>");
 foreach($fileList as $filename){
         if(is_file($filename)){
+
                 $ip_array = explode ("./ips/", $filename);
                 $ip = $ip_array[1];
                 print ("<tr>");
@@ -29,6 +31,11 @@ foreach($fileList as $filename){
                 fclose($linesP);
                 check($ip,$puerto);
                 print ("</td>");
+
+                $ruta_last = "./last/".$ip;
+                $last = fopen($ruta_last,"r");
+                print ("<td><font color=blue>".fgets($last)."</font></td>");
+                fclose($ruta_last);
 
                 $ruta_nombres = "./nombres/".$ip;
                 $nombres = fopen($ruta_nombres,"r");

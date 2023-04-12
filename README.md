@@ -13,3 +13,5 @@ The purpose is to have the bash script running periodically to identify the devi
 ./ips/("IPS_FILES_WITH_OPEN_PORTS")
 
 ./names/("IPS_FILES_WITH_FRIENDLY_NAMES")
+
+./last/("IPS_FILES_WITH_LAST_DATE_VIEW")

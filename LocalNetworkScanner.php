@@ -1,13 +1,14 @@
 <?php
+
 function check($ip,$puerto){
     if($puerto <> "0"){
         if(fsockopen($ip,$puerto,$timeout = 1))
         {
-                print "<font color=green>@</font>";
+                print "<td bgcolor=green width=20>";
         }
         else
         {
-                print "<font color=red>@</font>";
+                print "<td bgcolor=red width=20>";
         }
     }
 }
@@ -23,7 +24,6 @@ foreach($fileList as $filename){
                 $ip = $ip_array[1];
                 print ("<tr>");
 
-                print ("<td>");
                 $linesP = fopen($filename,'r');
                 $puertos = (fgets($linesP));
                 $puerto = explode (",",$puertos);

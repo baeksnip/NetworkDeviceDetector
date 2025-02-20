@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Config parametros #
+# Configuración de rango y rutas #
 rango="192.168.100"
 ruta_ficheros_puertos="/var/www/html/argos/_puertos/"
 ruta_ficheros_mac="/var/www/html/argos/_mac/"

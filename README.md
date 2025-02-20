@@ -7,6 +7,7 @@ The purpose is to have the bash script running periodically to identify the devi
 -argos.php (php script that generates a table from the data collected by the bash script)
 
 -Used folders(store in the path where the web server is mounted):
+
 ./_fecha/("IPS_FILES_WITH_LAST_DATE_VIEW")
 
 ./_nombre/("IPS_FILES_WITH_FRIENDLY_NAMES")

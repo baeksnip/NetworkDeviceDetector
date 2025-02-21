@@ -1,4 +1,8 @@
 #!/bin/bash
+function ctrl_c(){
+ exit 1
+}
+trap ctrl_c INT
 
 # Configuración de rango y rutas #
 rango="192.168.100"

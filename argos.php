@@ -4,7 +4,7 @@
 // ini_set('display_errors', 1);
 
 function check($ip,$puerto) {
-		if (($puerto != "") AND ($puerto != "0,")) {
+		if ($puerto != "") {
 			$fp = @fsockopen($ip, $puerto, $errno, $errstr, 1);
 			if ($fp) {
 				print "<td bgcolor=green width=20>";

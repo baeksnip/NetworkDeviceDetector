@@ -4,16 +4,20 @@
 // ini_set('display_errors', 1);
 
 function check($ip,$puerto) {
-		if ($puerto != "") {
-			$fp = @fsockopen($ip, $puerto, $errno, $errstr, 1);
-			if ($fp) {
-				print "<td bgcolor=green width=20>";
-				fclose($fp);
-			}
-		}
-		else {
-			print "<td bgcolor=red width=20>";
-		}
+        if ($puerto)
+        {
+                $fp = @fsockopen($ip, $puerto, $errno, $errstr, 1);
+                if ($fp) {
+                        print "<td bgcolor=green width=20>";
+                        fclose($fp);
+                }
+                else {
+                        print "<td bgcolor=red width=20>";
+                }
+        }
+        else {
+                print "<td bgcolor=red width=20>";
+        }
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
